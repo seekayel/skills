@@ -1,4 +1,4 @@
-# agent-skills
+# skills
 
 Skills for coding agents.
 
@@ -7,7 +7,7 @@ Skills for coding agents.
 Installs every skill globally for Claude Code and Codex via the [skills CLI](https://github.com/vercel-labs/skills):
 
 ```bash
-npx skills add seekayel/agent-skills --skill '*' -a claude-code -a codex -g -y
+npx skills add seekayel/skills --skill '*' -a claude-code -a codex -g -y
 ```
 
 To pick specific skills, drop `--skill '*' -y` and choose interactively, or pass a name: `--skill unslop`.
@@ -23,7 +23,7 @@ To pick specific skills, drop `--skill '*' -y` and choose interactively, or pass
 `research-plan-implement` uses three sub-agents (`codebase-locator`, `codebase-analyzer`, `pattern-finder`). The skills CLI doesn't install agents, so to get them, install it as a Claude Code plugin instead:
 
 ```
-/plugin marketplace add seekayel/agent-skills
+/plugin marketplace add seekayel/skills
 /plugin install research-plan-implement-plugin@agent-skills-marketplace
 ```
 

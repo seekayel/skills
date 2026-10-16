@@ -3,7 +3,7 @@
 # via the skills CLI (https://github.com/vercel-labs/skills).
 set -euo pipefail
 
-REPO="seekayel/agent-skills"
+REPO="seekayel/skills"
 SKILL="unslop"
 
 CLAUDE_CMD="npx skills add ${REPO} --skill ${SKILL} -a claude-code"
