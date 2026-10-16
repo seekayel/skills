@@ -4,13 +4,13 @@ Skills for coding agents.
 
 ## Install
 
-Installs every skill globally for Claude Code and Codex via the [skills CLI](https://github.com/vercel-labs/skills):
+Installs every skill globally for Claude Code and Codex, after you confirm the list, via the [skills CLI](https://github.com/vercel-labs/skills):
 
 ```bash
-npx skills add seekayel/skills --skill '*' -a claude-code -a codex -g -y
+npx skills add seekayel/skills --skill '*' -a claude-code -a codex -g
 ```
 
-To pick specific skills, drop `--skill '*' -y` and choose interactively, or pass a name: `--skill unslop`.
+To pick specific skills, drop `--skill '*'` and choose interactively, or pass a name: `--skill unslop`.
 
 ## Skills
 
