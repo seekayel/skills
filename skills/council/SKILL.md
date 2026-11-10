@@ -17,12 +17,13 @@ If the user wants to throw the implementation away and explore new ideas, skip f
 
 ## Seats
 
-Use the latest flagship model from each provider at high reasoning effort. If the user names models, in the request or in `CLAUDE.md` / `AGENTS.md`, use those.
+Use the latest flagship model from each provider at high reasoning effort. Run the Codex seat at `xhigh` and the Fable seat at `high`. If the user names models or effort levels, in the request or in `CLAUDE.md` / `AGENTS.md`, use those.
 
 | Seat | Model | Sits when |
 | --- | --- | --- |
 | Opus | Claude Opus | Always |
 | Codex | GPT Sol, through Codex | Always |
+| Fable | Claude Fable 5.2 | Available |
 | Muse | Muse Code | Installed and authenticated |
 | Grok | Grok | Installed and authenticated |
 | Jester | Gemini Pro | Installed and authenticated |
@@ -31,7 +32,7 @@ Opus and Codex are required. If either can't run, stop and report it. Don't subs
 
 Skip the optional seats without asking when they aren't available. Name each skipped seat and why in the report.
 
-In T3 Code, call `orchestrator_capabilities`. A seat is available when its provider has `canRunChildTask: true`, a non-empty `models` list, and no constraint saying it's disabled, not installed, or not authenticated. Take model IDs from that list. Don't hardcode them. Gemini may show up under Antigravity, OpenCode, or Pi. Use whichever available provider lists a Gemini Pro model.
+In T3 Code, call `orchestrator_capabilities`. A seat is available when its provider has `canRunChildTask: true`, a non-empty `models` list, and no constraint saying it's disabled, not installed, or not authenticated. Take model IDs from that list. Don't hardcode them. Fable sits on the Claude provider. Use the Fable 5.2 model it lists. Gemini may show up under Antigravity, OpenCode, or Pi. Use whichever available provider lists a Gemini Pro model.
 
 Outside T3 Code, use the harness's subagent tools or the provider's CLI. If you can't confirm a seat is logged in, it's unavailable. Never start an interactive login.
 
@@ -132,6 +133,7 @@ Rounds: 2
 | --- | --- | --- | --- |
 | Opus | Claude Opus 5.5 | 7/10 | 9/10 |
 | Codex | GPT-6.1-Sol | 8/10 | 10/10 |
+| Fable | Claude Fable 5.2 | 8/10 | 9/10 |
 | Jester | Gemini Pro | 5/10 | 6/10 |
 
 Skipped: Muse (not authenticated), Grok (not installed).
