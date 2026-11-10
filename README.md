@@ -17,7 +17,7 @@ To pick specific skills, drop `--skill '*'` and choose interactively, or pass a 
 - **unslop**: cuts AI tells from writing and rewrites it in a direct, conversational voice. Adapted from [cursor/plugins](https://github.com/cursor/plugins/tree/main/pstack/skills/unslop).
 - **research-plan-implement**: a research, plan, then implement workflow for code changes.
 - **code-review**: reviews uncommitted changes or a branch diff using the `codex` CLI.
-- **council** ("council"): reviews a change with Claude Opus and GPT Sol, plus Muse and Grok when they're authenticated, and Gemini as a contrarian "jester" when it's authenticated. Loops until the regular seats agree. Every seat reviews blind. It never sees the target score or the other reviews.
+- **council** ("council"): reviews a change with Claude Opus and GPT Sol, plus Claude Fable 5.2 when it's available, Muse and Grok when they're authenticated, and Gemini as a contrarian "jester" when it's authenticated. Loops until the regular seats agree. Every seat reviews blind. It never sees the target score or the other reviews.
 - **tenth-man** ("10th man"): runs `council` and adds a rebel on Claude Opus 5.5 or GPT 6.1 Sol. The rebel reads every other review and argues they're all wrong, the way Israeli military intelligence has used a "tenth man" since 1973. Install it with `council`.
 - **full-send** ("full send"): takes a change to a merged PR with nobody watching. It proves the change, gets a council review, files the PR, watches it, answers review bots, and merges. Uses `council`, so install both.
 

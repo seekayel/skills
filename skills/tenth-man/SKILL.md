@@ -11,13 +11,13 @@ This skill runs the `council` skill and adds that person. I call the seat the re
 
 ## How it differs from council
 
-Everything in `council` applies: the seats, the budget, the blind briefs, how you handle findings, and the report. This skill adds one seat that runs after the others every round.
+Everything in `council` applies: the seats (including Fable 5.2 at high effort), the budget, the blind briefs, how you handle findings, and the report. This skill adds one seat that runs after the others every round.
 
 The regular seats stay blind. They never learn the rebel exists. The rebel is the only seat that sees other reviews.
 
 ## The rebel
 
-Run the rebel on Claude Opus 5.5 or GPT 6.1 Sol. If the user names one, use it. Otherwise use the one that isn't running you, so the rebel doesn't share your blind spots. If you're neither, use GPT 6.1 Sol. In T3 Code, confirm the model is listed in `orchestrator_capabilities` and take its ID from there. Use high reasoning effort.
+Run the rebel on Claude Opus 5.5 or GPT 6.1 Sol. If the user names one, use it. Otherwise use the one that isn't running you, so the rebel doesn't share your blind spots. If you're neither, use GPT 6.1 Sol. In T3 Code, confirm the model is listed in `orchestrator_capabilities` and take its ID from there. Use high reasoning effort, or `xhigh` when the rebel runs through Codex.
 
 If neither model can run, stop and report it. Don't substitute.
 
